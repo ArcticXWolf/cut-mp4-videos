@@ -31,7 +31,7 @@ for directory in "$@"; do
       new_duration=`expr "$int_duration" - $CUT_FRONT - $CUT_BACK`
 
       # process file
-      ffmpeg -i "$file" -t $new_duration -ss $CUT_FRONT -c copy "$new_path" -n -v quiet < /dev/null
+      ffmpeg -ss $CUT_FRONT -i "$file" -to $new_duration -c copy "$new_path" -n -loglevel error < /dev/null
     done
   else
     echo "Does not exist, skipping: $directory \n"
