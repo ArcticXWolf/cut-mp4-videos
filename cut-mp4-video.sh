@@ -7,7 +7,7 @@
 # USAGE: ./cut-mp4-video.sh /path/to/directory/with/video/files /more/paths/if/needed
 
 DEPTH=3           # search depth for mp4 videos
-CUT_FRONT=12      # Amount of seconds to cut from the beginning
+CUT_FRONT=15      # Amount of seconds to cut from the beginning
 CUT_BACK=12       # Amount of seconds to cut from the end
 
 # iterate through each given directory
